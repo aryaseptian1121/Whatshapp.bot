@@ -1,0 +1,28 @@
+{
+  "groupKeyword": "Monitoring CP",
+  "minDelayMs": 10000,
+  "maxDelayMs": 15000,
+  "message": "*Update Reverse jam 10:45* → AWB yang masih PUSAT_DISPATCH, tolong segera dijadwalin ke sprinternya. *Karena ada penilaian untuk awb yang dijadwalkan sebelum 16:30*\n\nTinggal cek file yang saya lampirkan berisi AWB yang masih PUSAT_DISPATCH.\n\nTerima kasih.",
+  "maxRetries": 2,
+  "enableShutdown": true,
+  "runOnStart": false,
+  "excel": {
+    "filePath": "./assets/Reminder Reverse CP.xlsx",
+    "sheetName": "AWB",
+    "columns": {
+      "cp": "DP Terjadwal",
+      "awb": "No Resi",
+      "status": "Status",
+      "mention": "Mention"
+    }
+  },
+  "cpGroupOverrides": {
+    "CP_GADING_GRIYA_L": "Monitoring CP_GADING_GRIYA_L",
+    "CP_TAMBORA": "Monitoring CP_TAMBORA",
+    "CP_TIANG_BENDERA": "Monitoring Tiang Bendera",
+    "CP_TIANG_BENDERA_2": "Monitoring Tiang Bendera 2",
+    "CP_SAWAH_BESAR_MANGGA_BESAR": "Monitoring CP_MANGGA_BESAR",
+    "CP_SAWAH_BESAR": "Monitoring CP_MANGGA_BESAR",
+    "CP_MANGGA_BESAR": "Monitoring CP_MANGGA_BESAR"
+  }
+}

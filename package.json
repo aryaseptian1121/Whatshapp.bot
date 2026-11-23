@@ -1,0 +1,27 @@
+{
+  "name": "wa-bot",
+  "version": "2.0.0",
+  "description": "WhatsApp Bot untuk otomasi pengiriman reminder CP dari Excel",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "postinstall": "node scripts/patch-wwebjs-serialized.js"
+  },
+  "keywords": [
+    "whatsapp",
+    "bot",
+    "automation"
+  ],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "qrcode-terminal": "^0.12.0",
+    "whatsapp-web.js": "^1.34.8",
+    "xlsx": "^0.18.5"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
